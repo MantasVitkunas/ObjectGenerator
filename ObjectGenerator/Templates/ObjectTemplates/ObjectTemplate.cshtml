@@ -1,0 +1,24 @@
+﻿@using System
+@using ObjectGenerator.Models
+@model ObjectGenerator.Models.GeneratorModel.ObjectEntity
+
+@{ 
+    GeneratorModel.ObjectEntity entity = Model;
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ObjectGenerator.Output.Objects
+{
+    public class @entity.ObjectName
+    {
+    @foreach (GeneratorModel.ObjectElement item in entity.ObjectElements)
+    {
+       <text>public @item.ElementType @item.ElementName { get; set; }</text>
+}       
+    }
+}
