@@ -1,5 +1,4 @@
 
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +9,7 @@ namespace ObjectGenerator.Output.Objects
 {
     public class qqqqq
     {
-       public Int32 CustomerId { get; set; }
-       public String CustomerName { get; set; }
+        public Int32 CustomerId { get; set; }
+        public String CustomerName { get; set; }
     }
 }
